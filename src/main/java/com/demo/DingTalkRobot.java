@@ -12,9 +12,9 @@ import java.util.Map;
  */
 public class DingTalkRobot {
 
-    //private final static String dingUrl = "https://oapi.dingtalk.com/robot/send?access_token=ca577862751820ec266eb1e055c58f612757c83cab304b6581936fcbaa8098ce";
+    private final static String dingUrl = "https://oapi.dingtalk.com/robot/send?access_token=ca577862751820ec266eb1e055c58f612757c83cab304b6581936fcbaa8098ce";
 
-    private final static String dingUrl = "https://oapi.dingtalk.com/robot/send?access_token=a7b2c5b405d6993dce21785794fa76af7c4abf1583fb2aaf2f130a184edccf96";
+    //private final static String dingUrl = "https://oapi.dingtalk.com/robot/send?access_token=a7b2c5b405d6993dce21785794fa76af7c4abf1583fb2aaf2f130a184edccf96";
 
     public static void sendMessage(String msg, boolean isAtAll){
         try {

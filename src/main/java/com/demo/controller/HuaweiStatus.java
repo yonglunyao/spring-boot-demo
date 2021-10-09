@@ -15,7 +15,7 @@ public class HuaweiStatus {
     @ResponseBody
     public String getStatus() {
         String url = "https://career.huawei.com/reccampportal/services/portal/portaluser/20190918/queryMyJobInterviewEvolve";
-
+        int resLen = 3773;
         HttpRequest httpRequest = new HttpRequest();
 
         while (true) {
@@ -26,18 +26,14 @@ public class HuaweiStatus {
             String res = httpRequest.sendGet(url, param);
             int len = res.length();
 
-            if(len<1897){
+            if(len<resLen){
                 DingTalkRobot.sendMessage("可能出问题了，你去看看吧！", false);
             }
-            else if (len > 1897) {
+            else if (len > resLen) {
                 DingTalkRobot.sendMessage("可能发offer啦，快去看看吧！", true);
                 System.out.println(len);
             }
             else{
-                if (time % 3600000 == 0){
-                    DingTalkRobot.sendMessage("还没查到你的offer，耐心等等吧！time: " + time, false);
-                }
-
                 DingTalkRobot.sendMessage("还没查到你的offer，耐心等等吧！time: " + time, false);
             }
 
