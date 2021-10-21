@@ -1,0 +1,60 @@
+2021-10-22 07:37:48.383  INFO 27399 --- [main] c.demo.start.SpringBootdemoApplication   : Starting SpringBootdemoApplication on Yaos-MacBook-Pro.local with PID 27399 (/Users/yonglun/Documents/code/java/spring-boot-demo/target/classes started by a in /Users/yonglun/Documents/code/java/spring-boot-demo)
+2021-10-22 07:37:48.390  INFO 27399 --- [main] c.demo.start.SpringBootdemoApplication   : No active profile set, falling back to default profiles: default
+2021-10-22 07:37:48.444  INFO 27399 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@673be18f: startup date [Fri Oct 22 07:37:48 CST 2021]; root of context hierarchy
+2021-10-22 07:37:49.593  INFO 27399 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-10-22 07:37:49.639  INFO 27399 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-22 07:37:49.640  INFO 27399 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2021-10-22 07:37:49.646  INFO 27399 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yonglun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2021-10-22 07:37:49.754  INFO 27399 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-22 07:37:49.754  INFO 27399 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1311 ms
+2021-10-22 07:37:49.932  INFO 27399 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-10-22 07:37:49.939  INFO 27399 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-22 07:37:49.939  INFO 27399 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-22 07:37:49.939  INFO 27399 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-10-22 07:37:49.940  INFO 27399 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-22 07:37:50.095  INFO 27399 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-22 07:37:50.388  INFO 27399 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@673be18f: startup date [Fri Oct 22 07:37:48 CST 2021]; root of context hierarchy
+2021-10-22 07:37:50.473  INFO 27399 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/app/status]}" onto public java.lang.String com.demo.controller.HuaweiStatus.getStatus()
+2021-10-22 07:37:50.475  INFO 27399 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/app/test]}" onto public java.lang.String com.demo.controller.TestController.testDemo()
+2021-10-22 07:37:50.481  INFO 27399 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-10-22 07:37:50.482  INFO 27399 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-10-22 07:37:50.522  INFO 27399 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-22 07:37:50.523  INFO 27399 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-22 07:37:50.714  INFO 27399 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-10-22 07:37:50.789  INFO 27399 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-10-22 07:37:50.797  INFO 27399 --- [main] c.demo.start.SpringBootdemoApplication   : Started SpringBootdemoApplication in 3.123 seconds (JVM running for 6.13)
+2021-10-22 07:38:06.805  INFO 27399 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-10-22 07:38:06.805  INFO 27399 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-10-22 07:38:06.840  INFO 27399 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2021-10-22 07:39:38.960  INFO 27399 --- [Thread-10] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@673be18f: startup date [Fri Oct 22 07:37:48 CST 2021]; root of context hierarchy
+2021-10-22 07:39:38.963  INFO 27399 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-10-22 07:40:22.147  INFO 27483 --- [main] c.demo.start.SpringBootdemoApplication   : Starting SpringBootdemoApplication on Yaos-MacBook-Pro.local with PID 27483 (/Users/yonglun/Documents/code/java/spring-boot-demo/target/classes started by a in /Users/yonglun/Documents/code/java/spring-boot-demo)
+2021-10-22 07:40:22.154  INFO 27483 --- [main] c.demo.start.SpringBootdemoApplication   : No active profile set, falling back to default profiles: default
+2021-10-22 07:40:22.310  INFO 27483 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c4980d3: startup date [Fri Oct 22 07:40:22 CST 2021]; root of context hierarchy
+2021-10-22 07:40:24.034  INFO 27483 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-10-22 07:40:24.088  INFO 27483 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-22 07:40:24.089  INFO 27483 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2021-10-22 07:40:24.098  INFO 27483 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yonglun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2021-10-22 07:40:24.222  INFO 27483 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-22 07:40:24.223  INFO 27483 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1913 ms
+2021-10-22 07:40:24.401  INFO 27483 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-10-22 07:40:24.407  INFO 27483 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-10-22 07:40:24.407  INFO 27483 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-10-22 07:40:24.408  INFO 27483 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-10-22 07:40:24.408  INFO 27483 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-10-22 07:40:24.556  INFO 27483 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-22 07:40:24.832  INFO 27483 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c4980d3: startup date [Fri Oct 22 07:40:22 CST 2021]; root of context hierarchy
+2021-10-22 07:40:24.920  INFO 27483 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/app/status]}" onto public java.lang.String com.demo.controller.HuaweiStatus.getStatus()
+2021-10-22 07:40:24.923  INFO 27483 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/app/test]}" onto public java.lang.String com.demo.controller.TestController.testDemo()
+2021-10-22 07:40:24.932  INFO 27483 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-10-22 07:40:24.933  INFO 27483 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-10-22 07:40:24.981  INFO 27483 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-22 07:40:24.981  INFO 27483 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-10-22 07:40:25.316  INFO 27483 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-10-22 07:40:25.384  INFO 27483 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-10-22 07:40:25.390  INFO 27483 --- [main] c.demo.start.SpringBootdemoApplication   : Started SpringBootdemoApplication in 3.997 seconds (JVM running for 5.085)
+2021-10-22 07:40:32.583  INFO 27483 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-10-22 07:40:32.583  INFO 27483 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-10-22 07:40:32.622  INFO 27483 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+2021-10-22 07:41:37.213  INFO 27483 --- [Thread-10] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c4980d3: startup date [Fri Oct 22 07:40:22 CST 2021]; root of context hierarchy
+2021-10-22 07:41:37.215  INFO 27483 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown

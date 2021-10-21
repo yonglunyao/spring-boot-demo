@@ -14,8 +14,8 @@ public class HuaweiStatus {
     @RequestMapping("/status")
     @ResponseBody
     public String getStatus() {
-        String url = "https://career.huawei.com/reccampportal/services/portal/portaluser/20190918/queryMyJobInterviewEvolve";
-        int resLen = 3773;
+        String url = "https://career.huawei.com/reccampportal/services/portal/portaluser/queryMyJobInterviewPortal5";
+        int resLen = 552;
         HttpRequest httpRequest = new HttpRequest();
 
         while (true) {
