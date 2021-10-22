@@ -15,7 +15,7 @@ public class HuaweiStatus {
     @ResponseBody
     public String getStatus() {
         String url = "https://career.huawei.com/reccampportal/services/portal/portaluser/queryMyJobInterviewPortal5";
-        int resLen = 552;
+        int resLen = 522;
         HttpRequest httpRequest = new HttpRequest();
 
         while (true) {
