@@ -24,19 +24,19 @@ public class HuaweiStatus {
             param += String.valueOf(time);
 
             String res = httpRequest.sendGet(url, param);
-            int len = res.length();
 
-            if(len<resLen){
-                DingTalkRobot.sendMessage("可能出问题了，你去看看吧！", false);
-            }
-            else if (len > resLen) {
-                DingTalkRobot.sendMessage("可能发offer啦，快去看看吧！", true);
-                System.out.println(len);
-            }
-            else{
+            char c = res.charAt(3);
+
+            if(c=='i'){
                 DingTalkRobot.sendMessage("还没查到你的offer，耐心等等吧！time: " + time, false);
             }
+            else if (c=='R'){
+                DingTalkRobot.sendMessage("可能发offer啦，快去看看吧！", true);
+            }
+            else{
+                DingTalkRobot.sendMessage("可能出问题了，你去看看吧！", false);
 
+            }
             try {
                 Thread.sleep(10000);
             } catch (Exception e) {
