@@ -12,9 +12,9 @@ import java.util.Map;
  */
 public class DingTalkRobot {
 
-    private final static String dingUrl = "https://oapi.dingtalk.com/robot/send?access_token=ca577862751820ec266eb1e055c58f612757c83cab304b6581936fcbaa8098ce";
+    private final static String dingUrl = "https://oapi.dingtalk.com/robot/send?access_token=afaa8c6514f443b692da66696df45495cc2181ff7fba2231da9262e0aad4bcf5";
 
-    public static void sendMessage(String msg, boolean isAtAll){
+    public static void sendMessage(String msg, boolean isAtAll) {
         try {
             //钉钉机器人地址（配置机器人的webhook）
             DingTalkRobot dingTalkRobot = new DingTalkRobot();
@@ -42,13 +42,16 @@ public class DingTalkRobot {
 
     /**
      * 组装请求报文
+     *
      * @param content
      * @return
      */
     public static String buildReqStr(String content, boolean isAtAll, List<String> mobileList) {
+        String tag = "【通知】\n";
+
         //消息内容
         Map<String, String> contentMap = new HashMap<>();
-        contentMap.put("content", content);
+        contentMap.put("content", tag + content + "\n");
 
         //通知人
         Map<String, Object> atMap = new HashMap<>();
