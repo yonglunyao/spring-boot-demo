@@ -1,5 +1,5 @@
-import com.demo.DingTalkRobot;
-import com.demo.HttpUtil;
+import com.demo.util.DingTalkRobot;
+import com.demo.util.HttpUtil;
 import org.assertj.core.util.Lists;
 import org.junit.Test;
 import java.util.List;

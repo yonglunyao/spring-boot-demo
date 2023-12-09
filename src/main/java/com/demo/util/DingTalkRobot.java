@@ -1,4 +1,4 @@
-package com.demo;
+package com.demo.util;
 
 import com.alibaba.fastjson.JSON;
 import org.assertj.core.util.Lists;

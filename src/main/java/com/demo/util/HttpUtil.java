@@ -1,4 +1,4 @@
-package com.demo;//package com.demo;
+package com.demo.util;//package com.demo;
 
 import cn.hutool.http.HttpRequest;
 
@@ -17,6 +17,4 @@ public class HttpUtil {
         }
         return body;
     }
-
-
 }
